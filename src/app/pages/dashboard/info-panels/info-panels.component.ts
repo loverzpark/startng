@@ -9,26 +9,27 @@ import { Settings } from '../../../app.settings.model';
 })
 export class InfoPanelsComponent {
   
-  public nbrePayement = [{ name:'Nombre de payement', value:58}];
-  public nbrePayementBgColor = { domain: ['#2F3E9E'] };
+  public nbrPayement = [{ name:'nombre de payement', value:30000}];
+  public nbrPayementBgColor = { domain: ['#D22E2E'] };
 
-  public mtnTotalDePayement = [{ name:'likes', value:25000000,extra: { format: 'currency' }  }];
-  public mtnTotalDePayementBgColor = { domain: ['#D22E2E'] };
+  public mtnTotalPaye = [{ name:'montant total', value:30000, extra: { format: 'currency' } }];
+  public mtnTotalPayeBgColor = { domain: ['#3E50B4'] };
 
   
 
   public infoLabelFormat(c): string {
+ 
     switch(c.data.name) {
-      case 'nbrePayement':
-        return `<i class="fa fa-shopping-cart mr-2"></i>${c.label}`;
-      case 'mtnTotalDePayement':
-        return `<i class="fa fa-thumbs-o-up mr-2"></i>${c.label}`;
-     
+      case 'nombre de payement':
+      return `<i class="fa fa-pie-chart mr-2"></i>${c.label}`;
+        case 'montant total':
+        return `<i class="fa fa-cc-mastercard mr-2" aria-hidden="true"></i>${c.label}`;
       default:
         return c.label;
     }
   }
 
+  
   public infoValueFormat(c): string {
     switch(c.data.extra ? c.data.extra.format : '') {
       case 'currency':
@@ -57,8 +58,8 @@ export class InfoPanelsComponent {
 
   public ngDoCheck() {
     if(this.checkAppSettingsChanges()) {
-      setTimeout(() => this.nbrePayement = [...this.nbrePayement] ); 
-      setTimeout(() => this.mtnTotalDePayement = [...this.mtnTotalDePayement] ); 
+     setTimeout(() => this.nbrPayement = [...this.nbrPayement] ); 
+     setTimeout(() => this.mtnTotalPaye = [...this.mtnTotalPaye] ); 
       this.initPreviousSettings();
     }
   }
