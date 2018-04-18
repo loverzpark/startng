@@ -1,26 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AuditOperationsComponent } from './audit-operations/audit-operations.component';
-import {RouterModule} from '@angular/router';
+import { RouterModule } from '@angular/router';
 
-import {FormulaireRechercheComponent} from '../../theme/components/formulaire-recherche/formulaire-recherche.component';
+import {SharedModuleModule} from '../../shared-module/shared-module.module'
 
-import { ReactiveFormsModule }   from '@angular/forms';
-import { FormsModule } from '@angular/forms';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { ReactiveFormsModule } from '@angular/forms';
+
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+//import { FormulaireRechercheComponent } from '../../theme/components/formulaire-recherche/formulaire-recherche.component';
 
-export const routes=[
-  {path:'',redirectTo:'auditOperations', pathMatch:'full'},
-  {path:'auditOperations', component:AuditOperationsComponent,data:{ breadcrumb: 'Audit des operations' } }
+export const routes = [
+  { path: '', redirectTo: 'auditOperations', pathMatch: 'full' },
+  { path: 'auditOperations', component: AuditOperationsComponent, data: { breadcrumb: 'Audit des operations' } }
 ]
 
 @NgModule({
-  imports: [
+  imports: [SharedModuleModule,
     CommonModule, RouterModule.forChild(routes),
-    Ng2SmartTableModule,ReactiveFormsModule,FormsModule,NgbModule.forRoot()
+    Ng2SmartTableModule, ReactiveFormsModule
   ],
-  declarations: [AuditOperationsComponent,FormulaireRechercheComponent]
+  declarations: [AuditOperationsComponent],
+  providers:[]
 })
 export class AuditModule { }

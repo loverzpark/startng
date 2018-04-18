@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { ConsulterFacturesComponent } from './consulter-factures/consulter-factures.component';
 import {RouterModule} from '@angular/router';
 
-import {FormulaireRechercheComponent} from '../../theme/components/formulaire-recherche/formulaire-recherche.component';
 
+
+//import {FormulaireRechercheComponent} from '../../theme/components/formulaire-recherche/formulaire-recherche.component';
 import { ReactiveFormsModule }   from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -19,8 +20,8 @@ export const routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    Ng2SmartTableModule,ReactiveFormsModule,FormsModule,NgbModule.forRoot(),FormulaireRechercheComponent
+    Ng2SmartTableModule,ReactiveFormsModule,FormsModule,NgbModule.forRoot()
   ],
-  declarations: [ConsulterFacturesComponent]
+  declarations: [ConsulterFacturesComponent,]
 })
 export class GestionFacturesModule { }

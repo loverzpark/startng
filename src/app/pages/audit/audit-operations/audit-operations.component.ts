@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import {Router} from '@angular/router';
-
 @Component({
   selector: 'app-audit-operations',
   templateUrl: './audit-operations.component.html',
@@ -60,32 +59,39 @@ export class AuditOperationsComponent implements OnInit {
         editable: false,
         width: '5%',
         type: 'html',
+        sort:true,
+        sortDirection:'asc',
         valuePrepareFunction: (value) => { return '<div class="text-center">' + value + '</div>'; }
       },
       operation: {
         title: 'Operation',
         type: 'string',
-        width: '20%'
+        width: '20%',
+        sort:true,
+        sortDirection:'asc',
       },
       ip: {
         title: 'Ip',
         type: 'string',
-        width: '20%'
+        width: '20%',
+        
       },
       date: {
         title: 'Date',
         type: 'string',
-        width: '20%'
+        width: '20%',
+        
       },
       utilisateur: {
         title: 'Utilisateur',
         type: 'string',
-        width: '20%'
+        width: '20%',
       },
       role: {
         title: 'Role',
         type: 'string',
-        width: '20%'
+        width: '20%',
+        
       }
     },
 
