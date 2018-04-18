@@ -1,0 +1,58 @@
+<div widget class="card border-0 box-shadow">
+  <div class="card-header transparent border-0 text-muted">
+    <h5 class="mb-0">Rechercher / Exporter</h5>
+  </div>
+  <div class="card-body pt-0 widget-body">
+    <p class="text-left fs-13 text-gray">A lightweight and highly configurable datepicker directive. More information:
+      <a href="https://ng-bootstrap.github.io/#/components/datepicker"
+        target="_blank">ng-bootstrap datepicker</a>
+    </p>
+    <div class="row">
+      <div class="col-lg mb-2">
+        <form class="form-inline">
+          <div class="form-group col-md-4">
+            <div class="input-group">
+              <input class="form-control" placeholder="Date Début" name="start_date" [(ngModel)]="modelPopup1" ngbDatepicker #sd="ngbDatepicker">
+              <div class="input-group-append" (click)="sd.toggle()">
+                <span class="input-group-text">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-md-4">
+            <div class="input-group">
+              <input class="form-control" placeholder="Date Fin" name="end_date" [(ngModel)]="modelPopup2" ngbDatepicker #ed="ngbDatepicker">
+              <div class="input-group-append" (click)="ed.toggle()">
+                <span class="input-group-text">
+                  <i class="fa fa-calendar"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col offset-9">
+                <button class="btn btn-primary" type="submit">Rechercher</button>
+                <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Exporter
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item" href="#">CSV</a>
+                    <a class="dropdown-item" href="#">XLSX</a>
+                    <a class="dropdown-item" href="#">PDF</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<div class="card border-0 mb-4 p-0">
+  <div class="card-header transparent border-0">
+    <h5 class="font-weight-bold mb-0">Gestion Utilisateur</h5>
+  </div>
+</div>
+
+<div widget class="card border-0 box-shadow">
+
+
+  <div class="card-body widget-body">
+
+    <form class="form-horizontal" [formGroup]="myform" novalidate (ngSubmit)="onSubmit()">
+
+      <div class="form-group row text-left text-sm-right">
+        <label for="lastname" class="col-sm-3 form-control-label mt-1">Nom</label>
+        <div class="col-sm-6 text-left">
+          <input type="text" class="form-control" [(ngModel)]="userService.nom" formControlName="nom" id="lastname" required>
+          <small class="text-danger" *ngIf="myform.controls.nom.touched && myform.controls.nom.errors?.required">Champ requis</small>
+        </div>
+
+      </div>
+
+      <div class="form-group row text-sm-right">
+        <label for="firstname" class="col-sm-3 form-control-label mt-1">Prenom</label>
+        <div class="col-sm-6 text-left">
+          <input type="text" class="form-control" [(ngModel)]="userService.prenom" formControlName="prenom" id="firstname" required>
+          <small class="text-danger" *ngIf="myform.controls.prenom.errors?.required && myform.controls.prenom.touched">champ requis</small>
+        </div>
+      </div>
+
+
+      <div class="form-group row text-sm-right">
+        <label for="username" class="col-sm-3 form-control-label mt-1">Pseudo</label>
+        <div class="col-sm-6 text-left">
+          <input type="text" class="form-control" [(ngModel)]="userService.pseudo" formControlName="pseudo" id="username" required>
+          <small class="text-danger" *ngIf="myform.controls.pseudo.errors?.required && myform.controls.pseudo.touched">champ requis</small>
+        </div>
+      </div>
+
+      <div class="form-group row text-sm-right">
+        <label for="email" class="col-sm-3 form-control-label mt-1">Email</label>
+        <div class="col-sm-6 text-left">
+          <input type="email" class="form-control" [(ngModel)]="userService.email" formControlName="email" id="email" required>
+          <small class="text-danger" *ngIf="myform.controls.email.errors?.required && myform.controls.email.touched">champ requis </small>
+        </div>
+
+
+      </div>
+
+
+      <div class="form-group row text-sm-right">
+        <label class="col-sm-3 form-control-label mt-1">Profils</label>
+
+      </div>
+
+
+      <div class="form-group row">
+        <div class="col-sm-6 offset-sm-3 d-flex justify-content-between">
+
+          <button class="btn btn-primary  btn-lg pull-right " type="submit">Valider</button>
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+</div>
