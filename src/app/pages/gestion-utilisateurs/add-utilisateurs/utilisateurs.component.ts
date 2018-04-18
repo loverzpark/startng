@@ -3,9 +3,9 @@ import {userService} from '../../../services/user.service';
 import { FormGroup, FormControl,ReactiveFormsModule,Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-gestion-utilisateur',
-  templateUrl: './gestion-utilisateur.component.html',
-  styleUrls: ['./gestion-utilisateur.component.scss'],
+  selector: 'app-utilisateur',
+  templateUrl: './utilisateurs.component.html',
+  styleUrls: ['./utilisateurs.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 export class GestionUtilisateurComponent implements OnInit {

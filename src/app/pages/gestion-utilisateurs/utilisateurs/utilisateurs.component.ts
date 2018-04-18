@@ -3,13 +3,13 @@ import { userService } from '../../../services/user.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-liste-utilisateurs',
-  templateUrl: './liste-utilisateurs.component.html',
-  styleUrls: ['./liste-utilisateurs.component.scss'],
+  selector: 'app-utilisateurs',
+  templateUrl: './utilisateurs.component.html',
+  styleUrls: ['./utilisateurs.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
 
-export class ListeUtilisateursComponent implements OnInit {
+export class UtilisateursComponent implements OnInit {
 
 
   constructor(public userService: userService, public router: Router) {

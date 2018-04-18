@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ListeUtilisateursComponent } from './liste-utilisateurs/liste-utilisateurs.component';
-import { GestionUtilisateurComponent } from './gestion-utilisateurs/gestion-utilisateur.component';
+import { UtilisateursComponent } from './utilisateurs/utilisateurs.component';
 import {RouterModule } from '@angular/router';
 import { Ng2SmartTableModule } from 'ng2-smart-table';
 import { ReactiveFormsModule }   from '@angular/forms';
@@ -11,8 +10,7 @@ import {userService} from '../../services/user.service'
 
 export const routes =[
   { path: '', redirectTo: 'listeUtilisateurs', pathMatch: 'full'},
-  { path: 'listeUtilisateurs', component: ListeUtilisateursComponent, data: { breadcrumb: 'Liste Utilisateurs' } },
-  {path:'gestionUtilisateur', component:GestionUtilisateurComponent,data:{breadcrumb:'Gestion utilisateur'}}
+  { path: 'listeUtilisateurs', component: UtilisateursComponent, data: { breadcrumb: 'Liste Utilisateurs' } },
 ]
 
 
@@ -20,10 +18,10 @@ export const routes =[
   imports: [
     CommonModule,RouterModule.forChild(routes),Ng2SmartTableModule,ReactiveFormsModule
   ],
-  declarations: [ListeUtilisateursComponent, GestionUtilisateurComponent],
+  declarations: [UtilisateursComponent],
   providers:[userService]
 })
 
 
 
-export class UtilisateursModule { }
+export class GestionUtilisateursModule { }

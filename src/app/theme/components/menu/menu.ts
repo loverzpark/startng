@@ -12,6 +12,16 @@ export const verticalMenuItems =[
  new Menu (7,'Parametrage',null,null,'cog',null,true,0),
  new Menu (8,'Transaction',null,null,'id-card',null,true,0),
 
+ new Menu (9,'Audit Operations',null,null,'angle-right',null,false,2),
+ new Menu (10,'Consulter factures',null,null,'angle-right',null,false,3),
+ new Menu (11,'Période tarifaire',null,null,'angle-right',null,false,4),
+ new Menu (12,'Frais',null,null,'angle-right',null,false,4),
+ new Menu (13,'Profil',null,null,'angle-right',null,false,6),
+ new Menu (14,'Utilisateur',null,null,'angle-right',null,false,6),
+ new Menu (15,'Mot de passe',null,null,'angle-right',null,false,6),
+ new Menu (16,'Droit d\'acces',null,null,'angle-right',null,false,6),
+
+
  /*new Menu (4,'Securite',null, null,'shield',null,true,2),
  new Menu (5,'Parametrage',null, null,'cog',null,false,2),
 
