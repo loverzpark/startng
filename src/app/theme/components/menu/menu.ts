@@ -2,17 +2,23 @@ import { Menu } from './menu.model';
 
 
 export const verticalMenuItems =[
- new Menu (1,'Dasboard', '/pages/dashboard',null,'tachometer',null,false,0),
- new Menu (2,'Configuration',null,null,'cogs',null,true,0),
- new Menu (3,'Statistiques',null,null,'area-chart',null,true,0),
+ new Menu (1,'Tableau de bord', '/pages/dashboard',null,'tachometer',null,false,0),
 
- new Menu (4,'Securite',null, null,'shield',null,true,2),
+ new Menu (2,'Audit',null,null,'bar-chart',null,true,0),
+ new Menu (3,'Gestion des factures',null,null,'file-word-o',null,true,0),
+ new Menu (4,'Gestion des frais',null,null,'money',null,true,0),
+ new Menu (5,'Rapport de performance',null,null,'align-left',null,true,0),
+ new Menu (6,'Gestion des utilisateurs',null,null,'user',null,true,0),
+ new Menu (7,'Parametrage',null,null,'cog',null,true,0),
+ new Menu (8,'Transaction',null,null,'id-card',null,true,0),
+
+ /*new Menu (4,'Securite',null, null,'shield',null,true,2),
  new Menu (5,'Parametrage',null, null,'cog',null,false,2),
 
  new Menu (6,'report','/pages/reports',null,"angle-right",null,false,3),
 
  new Menu(9,'Utilisateurs','/pages/utilisateurs', null,"angle-right",null,false,4),
- new Menu(10,'Profils','/pages/profils', null,"angle-right",null,false,4)
+ new Menu(10,'Profils','/pages/profils', null,"angle-right",null,false,4)*/
 ];
 
 
