@@ -10,7 +10,8 @@ export const routes = [
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(routes)
   ],
   declarations: [ConsulterFacturesComponent]
 })
