@@ -9,7 +9,6 @@ import { routing } from './app.routing';
 import { AppSettings } from './app.settings';
 
 import { AppComponent } from './app.component';
-import { NotFoundComponent } from './pages/errors/not-found/not-found.component';
 
 
 
@@ -17,7 +16,6 @@ import { NotFoundComponent } from './pages/errors/not-found/not-found.component'
 @NgModule({
   declarations: [
     AppComponent,
-    NotFoundComponent
   ],
   imports: [
     BrowserModule,

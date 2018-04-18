@@ -28,8 +28,6 @@ import { UserMenuComponent } from '../theme/components/user-menu/user-menu.compo
 import { FlagsMenuComponent } from '../theme/components/flags-menu/flags-menu.component';
 import { SideChatComponent } from '../theme/components/side-chat/side-chat.component';
 import { FavoritesComponent } from '../theme/components/favorites/favorites.component';
-import { BlankComponent } from './blank/blank.component';
-import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -58,9 +56,7 @@ import { SearchComponent } from './search/search.component';
     UserMenuComponent,
     FlagsMenuComponent,
     SideChatComponent,
-    FavoritesComponent,
-    BlankComponent,
-    SearchComponent],
+    FavoritesComponent],
   providers:[
     {
       provide: PERFECT_SCROLLBAR_CONFIG,
