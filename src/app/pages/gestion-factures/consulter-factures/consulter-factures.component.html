@@ -2,9 +2,82 @@
 <div class="card border-0 mb-4 p-0">
     <div class="card-header transparent border-0">
       <h6 class="mb-3 font-weight-bold ">Rechercher par date</h6>
-      <p>
-        <app-formulaire-recherche></app-formulaire-recherche>
-      </p>
+      <form class="form-inline">
+
+          <div class="form-group col-md-3">
+            <div class="row ">
+        
+              <label class="col-md-4">Date début</label>
+              <div class="input-group col-md-8">
+        
+                <input class="form-control" placeholder="Date Début" name="start_date" [(ngModel)]="modelPopup1" ngbDatepicker #sd="ngbDatepicker">
+                <div class="input-group-append" (click)="sd.toggle()">
+                  <span class="input-group-text">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        
+          <div class="form-group col-md-3">
+            <div class="row ">
+        
+              <label class="col-md-4">Date fin</label>
+              <div class="input-group col-md-8">
+                <div class="input-group">
+                  <input class="form-control" placeholder="Date Fin" name="end_date" [(ngModel)]="modelPopup2" ngbDatepicker #ed="ngbDatepicker">
+                  <div class="input-group-append" (click)="ed.toggle()">
+                    <span class="input-group-text">
+                      <i class="fa fa-calendar"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-3">
+              <div class="row ">
+          
+                <label class="col-md-4">noe</label>
+                <div class="input-group col-md-8">
+                    <div class="form-group">
+                        <select class="form-control custom-select" id="exampleSelect3">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group col-md-3">
+                  <div class="row ">
+              
+                    <label class="col-md-5">NUmero d'abonnement</label>
+                    <div class="input-group col-md-7">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+           
+        
+          <div class="container-fluid">
+            <div class="row float-right my-3">
+             
+                <button class="btn btn-primary mr-2" type="submit">Valider</button>
+                    
+            </div>
+          </div>
+        
+        </form>
     </div>
   </div>
   

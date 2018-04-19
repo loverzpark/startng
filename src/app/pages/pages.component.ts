@@ -55,10 +55,10 @@ export class PagesComponent implements OnInit {
         sessionStorage["skin"] = theme;        
     }
  
-    ngAfterViewInit(){
+  /*  ngAfterViewInit(){
         document.getElementById('preloader').classList.add('hide');
     }
-
+*/
 
     @HostListener('window:resize')
     public onWindowResize():void {
