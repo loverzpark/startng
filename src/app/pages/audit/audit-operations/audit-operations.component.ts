@@ -23,8 +23,8 @@ export class AuditOperationsComponent implements OnInit {
   public settings = {
     selectMode: 'single',  //single|multi
     hideHeader: false,
-    hideSubHeader: true,
-    actions: {
+    hideSubHeader: false,
+        actions: {
       columnTitle: 'Actions',
       add: false,
       edit: false,
@@ -59,16 +59,14 @@ export class AuditOperationsComponent implements OnInit {
         editable: false,
         width: '5%',
         type: 'html',
-        sort:true,
-        sortDirection:'asc',
+        
         valuePrepareFunction: (value) => { return '<div class="text-center">' + value + '</div>'; }
       },
       operation: {
         title: 'Operation',
         type: 'string',
         width: '20%',
-        sort:true,
-        sortDirection:'asc',
+       
       },
       ip: {
         title: 'Ip',
@@ -97,7 +95,7 @@ export class AuditOperationsComponent implements OnInit {
 
     pager: {
       display: true,
-      perPage: 20
+      perPage: 5
     }
   };
 

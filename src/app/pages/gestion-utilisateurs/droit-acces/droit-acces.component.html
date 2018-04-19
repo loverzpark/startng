@@ -1,3 +1,61 @@
-<p>
-  droit-acces works!
-</p>
+<div class="card border-0 mb-4 p-0">
+    <div class="card-header transparent border-0">
+      <h6 class="mb-3 font-weight-bold ">Rechercher par profile</h6>
+      
+
+      <form class="form-inline">
+
+       
+          <div class="form-group col-md-3">
+            <div class="row ">
+        
+              <label class="col-md-4">Profil</label>
+              <div class="input-group col-md-8">
+                <div class="input-group">
+                 <select>
+                   <option>1</option>
+                   <option>2</option>
+                 </select>   
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col offset-9">
+                <button class="btn btn-primary mr-2" type="submit">Valider</button>
+        
+               
+              </div>
+            </div>
+          </div>
+        
+        </form>
+    </div>
+  </div>
+
+<div class="card border-0 mb-4 p-0">
+  <div class="card-body pt-0 widget-body">
+    <div class="row m-3">
+
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Exporter
+        </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <a class="dropdown-item" href="#">CSV</a>
+          <a class="dropdown-item" href="#">PDF</a>
+          <a class="dropdown-item" href="#">XLSX</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+
+    <ng2-smart-table class="table table-hover" [settings]="settings" [source]="data" (deleteConfirm)="onDeleteConfirm($event)"
+      (rowSelect)="onRowSelect($event)" (userRowSelect)="onUserRowSelect($event)" (rowHover)="onRowHover($event)" (custom)="onCustom($event)"></ng2-smart-table>
+  </div>
+</div>

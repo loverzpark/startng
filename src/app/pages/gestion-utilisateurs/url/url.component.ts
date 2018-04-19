@@ -1,12 +1,13 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import {Router} from '@angular/router';
+import {Router } from '@angular/router';
+
 @Component({
-  selector: 'app-frais',
-  templateUrl: './frais.component.html',
-  styleUrls: ['./frais.component.scss'],
+  selector: 'app-url',
+  templateUrl: './url.component.html',
+  styleUrls: ['./url.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
-export class FraisComponent implements OnInit {
+export class UrlComponent implements OnInit {
 
 
   constructor(public router:Router) { 

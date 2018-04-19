@@ -20,7 +20,8 @@ new Menu (14,'Profils','/pages/gestionUtilisateurs/profils',null,'angle-right',n
  new Menu (15,'Utilisateurs','/pages/gestionUtilisateurs/utilisateurs',null,'angle-right',null,false,6),
  new Menu (16,'Mot de passe','/pages/gestionUtilisateurs/MotDePasse',null,'angle-right',null,false,6),
  new Menu (17,'Droit d\'acces','/pages/gestionUtilisateurs/DroitAcces',null,'angle-right',null,false,6),
-new Menu (18,'Transactions','/pages/transactions/transactions',null,'angle-right',null,false,8)
+ new Menu (18,'Url','/pages/gestionUtilisateurs/url',null,'angle-right',null,false,6),
+new Menu (19,'Transactions','/pages/transactions/transactions',null,'angle-right',null,false,8)
 
 ];
 

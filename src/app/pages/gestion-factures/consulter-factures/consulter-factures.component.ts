@@ -25,7 +25,7 @@ export class ConsulterFacturesComponent implements OnInit {
  public settings = {
    selectMode: 'single',  //single|multi
    hideHeader: false,
-   hideSubHeader: true,
+   hideSubHeader: false,
    actions: {
      columnTitle: 'Actions',
      add: false,
@@ -92,7 +92,7 @@ export class ConsulterFacturesComponent implements OnInit {
 
    pager: {
      display: true,
-     perPage: 20
+     perPage: 5
    }
  };
 

@@ -1,3 +1,61 @@
-<p>
-  rapport-de-performance works!
-</p>
+<div class="card border-0 mb-4 p-0">
+    <div class="card-header transparent border-0">
+      <h6 class="mb-3 font-weight-bold ">Rechercher par date</h6>
+      <p>
+        <app-formulaire-recherche></app-formulaire-recherche>
+      </p>
+    </div>
+  </div>
+
+
+<div class="card border-0 mb-4 p-0">
+    <div class="card-body pt-0 widget-body">
+        <h6 class="m-3 font-weight-bold ">Opérations échouées</h6>
+      <div class="row m-3">
+       
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Exporter
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">CSV</a>
+              <a class="dropdown-item" href="#">PDF</a>
+              <a class="dropdown-item" href="#">XLSX</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="table-responsive">
+  
+        <ng2-smart-table class="table table-hover" [settings]="settings" [source]="data" (deleteConfirm)="onDeleteConfirm($event)"
+          (rowSelect)="onRowSelect($event)" (userRowSelect)="onUserRowSelect($event)" (rowHover)="onRowHover($event)" (custom)="onCustom($event)"></ng2-smart-table>
+      </div>
+    </div>
+
+    <div class="card border-0 mb-4 p-0">
+    <div class="card-body pt-0 widget-body">
+        <h6 class="m-3 font-weight-bold ">Opérations réussies</h6>
+      <div class="row m-3">
+       
+          <div class="btn-group" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Exporter
+            </button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="#">CSV</a>
+              <a class="dropdown-item" href="#">PDF</a>
+              <a class="dropdown-item" href="#">XLSX</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="table-responsive">
+  
+        <ng2-smart-table class="table table-hover" [settings]="settings" [source]="data" (deleteConfirm)="onDeleteConfirm($event)"
+          (rowSelect)="onRowSelect($event)" (userRowSelect)="onUserRowSelect($event)" (rowHover)="onRowHover($event)" (custom)="onCustom($event)"></ng2-smart-table>
+      </div>
+    </div>
